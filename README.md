@@ -29,5 +29,3 @@ An introduction to implementing multiple sorting algorithms separately, with -O 
 |106-bitonic_sort.c|***|
 |107-quick_sort_hoare.c|***|
 |1000-sort_deck.c|In this task, the insertion sort algorithm was chosen due to ease of implementation and the consistent, somewhat small data set. It works by sorting first by suit, then by value|***
-|110-New_Project.c| This one is for test oooo./
-|111-Another_new.c| check this out.
