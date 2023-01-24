@@ -1,21 +1,28 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "sort.h"
-
 /**
- * main - Entry point
- *
- * Return: Always 0
+ * bubble_sort - sort array lements from min to max value
+ * @array: array
+ * @size: array size
  */
-int main(void)
+void bubble_sort(int *array, size_t size)
 {
-    int array[] = {19, 48, 99, 71, 13, 52, 96, 73, 86, 7};
-    size_t n = sizeof(array) / sizeof(array[0]);
 
-    print_array(array, n);
-    printf("\n");
-    bubble_sort(array, n);
-    printf("\n");
-    print_array(array, n);
-    return (0);
+	size_t i, index, tmp = 0;
+
+	if (size < 2)
+		return;
+	for (i = 0; i < size; i++)
+		for (index = 0; index < size; index++)
+		{
+			if (array[index] > array[index + 1] && array[index + 1])
+			{
+			tmp = array[index];
+			array[index] = array[index + 1];
+			array[index + 1] = tmp;
+			print_array(array, size);
+			}
+		}
 }
